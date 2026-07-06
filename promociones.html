@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inka Motors: Promociones</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="img/inca.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.0/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <div id="contenido">
+        <div id="cabeza">
+        <header id="titulo">
+            <h2>Inca Motors</h2>
+        </header>
+        <nav id="men" class="centro">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                <li><a href="nosotros.html"><i class="fa-solid fa-users"></i>Nosotros</a></li>
+                <li><a href="blog.html"><i class="fa-solid fa-pencil"></i>Blog</a></li>
+                <li><a href="galeria.html"><i class="fa-solid fa-image"></i>Galeria</a></li>
+                <li><a href="video.html"><i class="fa-solid fa-video"></i>video</a></li>
+                <li class="caf"><a href="promociones.html"><i class="fa-solid fa-gift"></i>Promociones</a></li>
+                <li><a href="combos.html"><i class="fa-solid fa-basket-shopping"></i>Combos</a></li>
+                <li><a href="contacto.html"><i class="fa-solid fa-address-book"></i>Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="promociones">
+        <div id="promo">
+        <h3><i class="fa-solid fa-car-rear"></i>Promociones Exclusivas</h3>
+        <p>“El auto que quieres, al mejor precio. Válido mostrando esta pantalla en tienda.”</p>
+        </div>
+        <div id="promo-cupon">
+            <h2>¡Oferta especial en tu próximo carro!</h2>
+            <p>Encuentra el auto ideal con un precio exclusivo por tiempo limitado.</p>
+            <input type="button" id="boton" value="Reclamar Cupón">
+            <p><i class="fa-solid fa-tag"></i>Válido mostrando esta pantalla en tienda</p>
+        </div>
+    </div>
+    <footer id="pata" style="margin: 10px;">
+        <a href="https://www.facebook.com/incamotors.oficial/?locale=es_LA"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/incamotors.oficial/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@incamotorsoficial"><i class="fa-brands fa-tiktok"></i></a>
+    </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script> 
+    $(function(){
+      $("#boton").click(function(){
+        Swal.fire({
+        imageUrl: 'img/imagecarro.png',
+        confirmButtonColor:'#01374E',
+        confirmButtonText:'Entendido',
+        background: '#E6F7FF',
+        title: '¡Cupón Activado!',
+        text:'Muestra el código en caja: AUTO-PA4-ISIL',
+        icon: 'success',
+        });
+      });
+    });
+  </script>
+</body>
+</html>
