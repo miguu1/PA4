@@ -339,9 +339,7 @@ hr{
     width: 90%;
     margin: auto;
 }
-/* ========================= */
 /* CELULAR */
-/* ========================= */
 @media (max-width: 640px) {
 
     #contenido {
@@ -498,11 +496,7 @@ hr{
         margin: 20px auto;
     }
 }
-
-
-/* ========================= */
 /* TABLET */
-/* ========================= */
 @media (min-width: 641px) and (max-width: 1024px) {
 
     #contenido {
